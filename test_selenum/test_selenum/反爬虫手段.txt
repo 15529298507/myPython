@@ -6,3 +6,6 @@
             'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
         }
 
+2. 检查请求的来源(请求头中的Referer的值)（这个请求发送之前，打开的是哪一个页面） --- 防盗链接
+    解决方案：抓包看一下发请求的时候，浏览器传递的Referer值是什么，然后在代码中的请求头中加上对应的值
+        Referer: https://passport.china.con/login
