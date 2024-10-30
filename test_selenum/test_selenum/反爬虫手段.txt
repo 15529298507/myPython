@@ -1,0 +1,8 @@
+
+1. 检测请求头中的'User-Agent'是否是一个正常浏览器的User-Agent
+    解决方案：在请求时，自己设置请求头中的User-Agent
+    # 请求头是字典格式
+        headers = {
+            'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+        }
+
